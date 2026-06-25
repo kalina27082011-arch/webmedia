@@ -89,6 +89,7 @@ a {
   justify-content: center;
   width: 44px;
   height: 44px;
+  padding: 3px;
   background: var(--gradient);
   border-radius: 50%;
   line-height: 1;
@@ -96,6 +97,7 @@ a {
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 4px 20px var(--accent-glow);
   animation: logo-pulse 3s ease-in-out infinite;
   transition: transform var(--transition), box-shadow var(--transition);
+  overflow: hidden;
 }
 
 .logo:hover .logo__mark {
@@ -107,16 +109,19 @@ a {
 .logo__m {
   font-weight: 800;
   color: #fff;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.06em;
+  line-height: 0.82;
+  width: 100%;
+  text-align: center;
 }
 
 .logo__w {
-  font-size: 0.72rem;
-  margin-bottom: -1px;
+  font-size: 1.35rem;
+  margin-bottom: -6px;
 }
 
 .logo__m {
-  font-size: 0.78rem;
+  font-size: 1.4rem;
 }
 
 .nav {
