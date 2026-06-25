@@ -649,6 +649,32 @@ a {
   color: var(--text);
 }
 
+.btn--max {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #5b4cff 0%, #7c3aed 100%);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 24px rgba(91, 76, 255, 0.35);
+  transition: var(--transition);
+}
+
+.btn--max:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(91, 76, 255, 0.45);
+}
+
+.btn--max__icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
 .contact-form {
   background: var(--bg-card);
   border: 1px solid var(--border);
