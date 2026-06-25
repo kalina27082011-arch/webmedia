@@ -112,29 +112,31 @@
             </ul>
           </article>
 
-          <article class="service-card">
-            <div class="service-card__header">
-              <span class="service-card__icon">🔍</span>
-              <h3 class="service-card__title">Контекстная реклама</h3>
-            </div>
-            <p class="service-card__desc">Настраиваем и ведём рекламу в Яндекс.Директ и Google Ads — приводим горячих клиентов с первого дня.</p>
-          </article>
+          <div class="services-row">
+            <article class="service-card">
+              <div class="service-card__header">
+                <span class="service-card__icon">🔍</span>
+                <h3 class="service-card__title">Контекстная реклама</h3>
+              </div>
+              <p class="service-card__desc">Настраиваем и ведём рекламу в Яндекс.Директ и Google Ads — приводим горячих клиентов с первого дня.</p>
+            </article>
 
-          <article class="service-card">
-            <div class="service-card__header">
-              <span class="service-card__icon">📊</span>
-              <h3 class="service-card__title">SEO-продвижение</h3>
-            </div>
-            <p class="service-card__desc">Выводим сайт в топ поисковых систем, увеличиваем органический трафик и узнаваемость бренда.</p>
-          </article>
+            <article class="service-card">
+              <div class="service-card__header">
+                <span class="service-card__icon">📊</span>
+                <h3 class="service-card__title">SEO-продвижение</h3>
+              </div>
+              <p class="service-card__desc">Выводим сайт в топ поисковых систем, увеличиваем органический трафик и узнаваемость бренда.</p>
+            </article>
 
-          <article class="service-card">
-            <div class="service-card__header">
-              <span class="service-card__icon">📱</span>
-              <h3 class="service-card__title">Таргетированная реклама</h3>
-            </div>
-            <p class="service-card__desc">Запускаем рекламу в соцсетях — VK, Telegram, Instagram* — с точным попаданием в вашу аудиторию.</p>
-          </article>
+            <article class="service-card">
+              <div class="service-card__header">
+                <span class="service-card__icon">📱</span>
+                <h3 class="service-card__title">Таргетированная реклама</h3>
+              </div>
+              <p class="service-card__desc">Запускаем рекламу в соцсетях — VK, Telegram, Instagram* — с точным попаданием в вашу аудиторию.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -262,12 +264,27 @@
             </div>
           </div>
 
-          <a href="https://max.ru/webmedia" class="btn btn--max" target="_blank" rel="noopener noreferrer">
-            <svg class="btn--max__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 2C6.48 2 2 6.15 2 11.25c0 2.85 1.44 5.4 3.72 7.05L4.5 21.5l3.6-1.05C9.36 21.15 10.65 21.5 12 21.5c5.52 0 10-4.15 10-9.25S17.52 2 12 2zm0 16.5c-1.2 0-2.37-.3-3.42-.87l-.24-.14-2.13.62.57-2.08-.16-.24C5.1 14.7 4.5 13.02 4.5 11.25 4.5 7.14 7.86 4 12 4s7.5 3.14 7.5 7.25S16.14 18.5 12 18.5z"/>
-            </svg>
-            Написать в MAX
-          </a>
+          <div class="contact-actions">
+            <a href="tel:+78001234567" class="btn btn--contact btn--phone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              Позвонить
+            </a>
+            <a href="mailto:info@webmedia.ru" class="btn btn--contact btn--email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              Email
+            </a>
+            <a href="https://max.ru/webmedia" class="btn btn--contact btn--max" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.15 2 11.25c0 2.85 1.44 5.4 3.72 7.05L4.5 21.5l3.6-1.05C9.36 21.15 10.65 21.5 12 21.5c5.52 0 10-4.15 10-9.25S17.52 2 12 2zm0 16.5c-1.2 0-2.37-.3-3.42-.87l-.24-.14-2.13.62.57-2.08-.16-.24C5.1 14.7 4.5 13.02 4.5 11.25 4.5 7.14 7.86 4 12 4s7.5 3.14 7.5 7.25S16.14 18.5 12 18.5z"/>
+              </svg>
+              MAX
+            </a>
+          </div>
         </div>
 
         <form class="contact-form" id="contactForm">

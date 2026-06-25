@@ -32,7 +32,7 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(
-  '.service-card, .industry-card, .process-step, .section__head, .cta-block, .contact-info, .contact-form'
+  '.service-card, .services-row, .industry-card, .process-step, .section__head, .cta-block, .contact-info, .contact-form'
 ).forEach(el => {
   el.classList.add('reveal');
   observer.observe(el);

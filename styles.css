@@ -427,8 +427,14 @@ a {
 
 /* Services */
 .services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.services-row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -447,9 +453,14 @@ a {
 }
 
 .service-card--featured {
-  grid-row: span 2;
   background: linear-gradient(145deg, rgba(99, 102, 241, 0.08) 0%, var(--bg-card) 60%);
   border-color: rgba(99, 102, 241, 0.2);
+}
+
+.service-card--featured .service-card__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 24px;
 }
 
 .service-card__header {
@@ -649,30 +660,61 @@ a {
   color: var(--text);
 }
 
-.btn--max {
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.btn--contact {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 32px;
-  padding: 14px 28px;
-  background: linear-gradient(135deg, #5b4cff 0%, #7c3aed 100%);
-  color: #fff;
+  gap: 8px;
+  padding: 12px 22px;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 0.95rem;
-  box-shadow: 0 4px 24px rgba(91, 76, 255, 0.35);
+  font-size: 0.9rem;
   transition: var(--transition);
+}
+
+.btn--contact svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.btn--phone {
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.btn--phone:hover {
+  background: rgba(34, 197, 94, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn--email {
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--accent-light);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.btn--email:hover {
+  background: rgba(99, 102, 241, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn--max {
+  background: linear-gradient(135deg, #5b4cff 0%, #7c3aed 100%);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(91, 76, 255, 0.3);
 }
 
 .btn--max:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(91, 76, 255, 0.45);
-}
-
-.btn--max__icon {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
+  box-shadow: 0 8px 28px rgba(91, 76, 255, 0.4);
 }
 
 .contact-form {
@@ -857,12 +899,12 @@ a {
     display: none;
   }
 
-  .services-grid {
+  .services-row {
     grid-template-columns: 1fr;
   }
 
-  .service-card--featured {
-    grid-row: span 1;
+  .service-card--featured .service-card__list {
+    grid-template-columns: 1fr;
   }
 
   .industries-grid {
