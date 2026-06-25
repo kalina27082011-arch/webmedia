@@ -14,7 +14,10 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#" class="logo">
-        <span class="logo__mark">W</span>
+        <span class="logo__mark">
+          <span class="logo__w">W</span>
+          <span class="logo__m">M</span>
+        </span>
         <span class="logo__text">WEBMEDIA</span>
       </a>
       <nav class="nav" id="nav">
@@ -33,55 +36,65 @@
 
   <main>
     <section class="hero">
-      <div class="hero__bg"></div>
+      <div class="hero__bg">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+      </div>
       <div class="container hero__inner">
         <div class="hero__content">
-          <p class="hero__badge">Digital-агентство полного цикла</p>
-          <h1 class="hero__title">
+          <p class="hero__badge anim-fade-up">Digital-агентство полного цикла</p>
+          <h1 class="hero__title anim-fade-up anim-delay-1">
             Сайты и реклама,<br>
-            <span class="gradient-text">которые приводят клиентов</span>
+            <span class="gradient-text gradient-text--animated">которые приводят клиентов</span>
           </h1>
-          <p class="hero__desc">
+          <p class="hero__desc anim-fade-up anim-delay-2">
             WEBMEDIA создаёт сайты любой сложности — от визиток и каталогов до интернет-магазинов — 
             и запускает рекламу, которая работает на ваш бизнес.
           </p>
-          <div class="hero__actions">
-            <a href="#contact" class="btn btn--primary">Получить консультацию</a>
+          <div class="hero__actions anim-fade-up anim-delay-3">
+            <a href="#contact" class="btn btn--primary btn--shine">Получить консультацию</a>
             <a href="#services" class="btn btn--ghost">Наши услуги</a>
           </div>
-          <div class="hero__stats">
+          <div class="hero__stats anim-fade-up anim-delay-4">
             <div class="stat">
-              <span class="stat__num">150+</span>
+              <div class="stat__value">
+                <span class="stat__num" data-count="150">0</span><span class="stat__suffix">+</span>
+              </div>
               <span class="stat__label">реализованных проектов</span>
             </div>
             <div class="stat">
-              <span class="stat__num">12</span>
+              <div class="stat__value">
+                <span class="stat__num" data-count="12">0</span>
+              </div>
               <span class="stat__label">отраслей бизнеса</span>
             </div>
             <div class="stat">
-              <span class="stat__num">7 лет</span>
+              <div class="stat__value">
+                <span class="stat__num"><span data-count="7">0</span> лет</span>
+              </div>
               <span class="stat__label">на рынке digital</span>
             </div>
           </div>
         </div>
-        <div class="hero__visual">
+        <div class="hero__visual anim-fade-up anim-delay-2">
           <div class="hero-card hero-card--1">
-            <div class="hero-card__icon">🌐</div>
+            <div class="hero-card__icon anim-bounce">🌐</div>
             <div class="hero-card__title">Сайт под ключ</div>
-            <div class="hero-card__bar"><span style="width: 92%"></span></div>
+            <div class="hero-card__bar"><span class="hero-card__progress"></span></div>
           </div>
           <div class="hero-card hero-card--2">
-            <div class="hero-card__icon">📈</div>
+            <div class="hero-card__icon anim-bounce anim-delay-1">📈</div>
             <div class="hero-card__title">Рост заявок</div>
-            <div class="hero-card__value">+340%</div>
+            <div class="hero-card__value">+<span class="anim-count-up" data-count="340">0</span>%</div>
           </div>
           <div class="hero-card hero-card--3">
-            <div class="hero-card__icon">🎯</div>
+            <div class="hero-card__icon anim-bounce anim-delay-2">🎯</div>
             <div class="hero-card__title">Таргет + SEO</div>
             <div class="hero-card__tags">
-              <span>Яндекс</span>
-              <span>Google</span>
-              <span>VK</span>
+              <span class="anim-tag anim-delay-1">Яндекс</span>
+              <span class="anim-tag anim-delay-2">Google</span>
+              <span class="anim-tag anim-delay-3">VK</span>
             </div>
           </div>
         </div>
@@ -244,7 +257,7 @@
 
     <section class="section" id="contact">
       <div class="container contact-grid">
-        <div class="contact-info">
+        <div class="contact-info reveal-left">
           <span class="section__tag">Контакты</span>
           <h2 class="section__title">Оставьте заявку</h2>
           <p class="section__desc">Заполните форму — мы свяжемся с вами и ответим на все вопросы.</p>
@@ -287,7 +300,7 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form reveal-right" id="contactForm">
           <div class="form-group">
             <label for="name">Ваше имя</label>
             <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
@@ -322,7 +335,10 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="#" class="logo">
-          <span class="logo__mark">W</span>
+          <span class="logo__mark">
+            <span class="logo__w">W</span>
+            <span class="logo__m">M</span>
+          </span>
           <span class="logo__text">WEBMEDIA</span>
         </a>
         <p>Создание сайтов и digital-продвижение для бизнеса любого масштаба.</p>
