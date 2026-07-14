@@ -52,7 +52,7 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(
-  '.service-card, .services-row, .industry-card, .process-step, .section__head, .cta-block, .reveal-left, .reveal-right, .hero__stats'
+  '.service-card, .services-row, .industry-card, .process-step, .section__head, .cta-block, .contact-info__intro, .reveal-left, .reveal-right, .hero__stats'
 ).forEach(el => {
   if (!el.classList.contains('reveal') &&
       !el.classList.contains('reveal-left') &&
@@ -132,4 +132,21 @@ phoneInput.addEventListener('input', e => {
   if (value.length > 9) formatted += '-' + value.slice(9, 11);
 
   e.target.value = formatted;
+});
+
+document.querySelectorAll('.contact-link').forEach(link => {
+  link.addEventListener('click', event => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    const opener = document.createElement('a');
+    opener.href = href;
+    opener.style.display = 'none';
+    document.body.appendChild(opener);
+    opener.click();
+    document.body.removeChild(opener);
+  });
 });

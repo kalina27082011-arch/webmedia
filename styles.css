@@ -749,6 +749,10 @@ a {
   text-align: left;
 }
 
+.contact-info__intro {
+  margin-bottom: 32px;
+}
+
 .contact-info .section__head {
   margin: 0 0 32px;
   text-align: left;
@@ -770,14 +774,20 @@ a {
   margin-bottom: 4px;
 }
 
-.contact-detail a {
+.contact-detail a,
+.contact-link {
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--accent-light);
   transition: color var(--transition);
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
-.contact-detail a:hover {
+.contact-detail a:hover,
+.contact-link:hover {
   color: var(--text);
 }
 
@@ -785,7 +795,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 32px;
+  position: relative;
+  z-index: 3;
 }
 
 .btn--contact {
@@ -797,6 +808,11 @@ a {
   font-weight: 600;
   font-size: 0.9rem;
   transition: var(--transition);
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .btn--contact svg {
