@@ -133,20 +133,3 @@ phoneInput.addEventListener('input', e => {
 
   e.target.value = formatted;
 });
-
-document.querySelectorAll('.contact-link').forEach(link => {
-  link.addEventListener('click', event => {
-    const href = link.getAttribute('href');
-    if (!href) return;
-
-    event.preventDefault();
-    event.stopPropagation();
-
-    const opener = document.createElement('a');
-    opener.href = href;
-    opener.style.display = 'none';
-    document.body.appendChild(opener);
-    opener.click();
-    document.body.removeChild(opener);
-  });
-});

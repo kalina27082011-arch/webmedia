@@ -774,20 +774,17 @@ a {
   margin-bottom: 4px;
 }
 
-.contact-detail a,
-.contact-link {
+.contact-detail a {
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--accent-light);
   transition: color var(--transition);
   position: relative;
   z-index: 2;
-  pointer-events: auto;
   cursor: pointer;
 }
 
-.contact-detail a:hover,
-.contact-link:hover {
+.contact-detail a:hover {
   color: var(--text);
 }
 
